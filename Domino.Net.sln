@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{7896849A-935F-4B40-B1D4-C04D4344958E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrestructure", "Infrestructure", "{D5A60557-4071-49C7-9BEF-6EB9FA82F783}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistence", "Persistence", "{903145BE-2A96-4E05-8BB2-957B40FFEA4E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{5DC43065-409A-4DEF-9571-FFA5A514CC3C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{62CDAADF-BF1A-4091-8F05-D6B9C5A2585E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domino.Net", "Application\Domino.Net\Domino.Net.csproj", "{9C604948-EED9-4FA0-B3E9-63E4D2139CFB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domino.Net.Core", "Domain\Domino.Net.Core\Domino.Net.Core.csproj", "{938CE024-CB13-4F3F-A964-719C26EF536B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domino.Net.Infrestructure", "Infrestructure\Domino.Net.Shared\Domino.Net.Infrestructure.csproj", "{EFDB8DA8-9F5E-4ED4-8544-720DAB381839}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domino.Net.Api", "Presentation\Domino.Net.Api\Domino.Net.Api.csproj", "{E57B9E9A-CF95-4F54-874C-AB1362EA35BD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domino.Net.Console", "Presentation\Domino.Net.Console\Domino.Net.Console.csproj", "{9A38C0CE-8E70-45B1-BE50-FB378564197F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domino.Net.Sql", "Infrestructure\Persistence\Domino.Net.Sql\Domino.Net.Sql.csproj", "{7E5A7FC4-0030-43DC-AB98-85546F493977}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domino.Net.Coin", "Infrestructure\Persistence\Domino.Net.Coin\Domino.Net.Coin.csproj", "{7AA545B1-2D05-4DF2-BBAD-34DA59CD8687}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C604948-EED9-4FA0-B3E9-63E4D2139CFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C604948-EED9-4FA0-B3E9-63E4D2139CFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C604948-EED9-4FA0-B3E9-63E4D2139CFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C604948-EED9-4FA0-B3E9-63E4D2139CFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{938CE024-CB13-4F3F-A964-719C26EF536B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{938CE024-CB13-4F3F-A964-719C26EF536B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{938CE024-CB13-4F3F-A964-719C26EF536B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{938CE024-CB13-4F3F-A964-719C26EF536B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFDB8DA8-9F5E-4ED4-8544-720DAB381839}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFDB8DA8-9F5E-4ED4-8544-720DAB381839}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFDB8DA8-9F5E-4ED4-8544-720DAB381839}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFDB8DA8-9F5E-4ED4-8544-720DAB381839}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E57B9E9A-CF95-4F54-874C-AB1362EA35BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E57B9E9A-CF95-4F54-874C-AB1362EA35BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E57B9E9A-CF95-4F54-874C-AB1362EA35BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E57B9E9A-CF95-4F54-874C-AB1362EA35BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A38C0CE-8E70-45B1-BE50-FB378564197F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A38C0CE-8E70-45B1-BE50-FB378564197F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A38C0CE-8E70-45B1-BE50-FB378564197F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A38C0CE-8E70-45B1-BE50-FB378564197F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E5A7FC4-0030-43DC-AB98-85546F493977}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E5A7FC4-0030-43DC-AB98-85546F493977}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E5A7FC4-0030-43DC-AB98-85546F493977}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E5A7FC4-0030-43DC-AB98-85546F493977}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AA545B1-2D05-4DF2-BBAD-34DA59CD8687}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AA545B1-2D05-4DF2-BBAD-34DA59CD8687}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AA545B1-2D05-4DF2-BBAD-34DA59CD8687}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AA545B1-2D05-4DF2-BBAD-34DA59CD8687}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{903145BE-2A96-4E05-8BB2-957B40FFEA4E} = {D5A60557-4071-49C7-9BEF-6EB9FA82F783}
+		{9C604948-EED9-4FA0-B3E9-63E4D2139CFB} = {5DC43065-409A-4DEF-9571-FFA5A514CC3C}
+		{938CE024-CB13-4F3F-A964-719C26EF536B} = {62CDAADF-BF1A-4091-8F05-D6B9C5A2585E}
+		{EFDB8DA8-9F5E-4ED4-8544-720DAB381839} = {D5A60557-4071-49C7-9BEF-6EB9FA82F783}
+		{E57B9E9A-CF95-4F54-874C-AB1362EA35BD} = {7896849A-935F-4B40-B1D4-C04D4344958E}
+		{9A38C0CE-8E70-45B1-BE50-FB378564197F} = {7896849A-935F-4B40-B1D4-C04D4344958E}
+		{7E5A7FC4-0030-43DC-AB98-85546F493977} = {903145BE-2A96-4E05-8BB2-957B40FFEA4E}
+		{7AA545B1-2D05-4DF2-BBAD-34DA59CD8687} = {903145BE-2A96-4E05-8BB2-957B40FFEA4E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {18FBB6A1-6688-4A4E-A27F-B92F31F34173}
+	EndGlobalSection
+EndGlobal

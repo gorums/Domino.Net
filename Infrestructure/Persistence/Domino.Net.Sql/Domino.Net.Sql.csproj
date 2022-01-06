@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Domain\Domino.Net.Core\Domino.Net.Core.csproj" />
+    <ProjectReference Include="..\..\Domino.Net.Shared\Domino.Net.Infrestructure.csproj" />
+  </ItemGroup>
+
+</Project>

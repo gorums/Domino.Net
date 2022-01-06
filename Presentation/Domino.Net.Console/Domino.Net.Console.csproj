@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application\Domino.Net\Domino.Net.csproj" />
+    <ProjectReference Include="..\..\Domain\Domino.Net.Core\Domino.Net.Core.csproj" />
+    <ProjectReference Include="..\..\Infrestructure\Domino.Net.Shared\Domino.Net.Infrestructure.csproj" />
+    <ProjectReference Include="..\..\Infrestructure\Persistence\Domino.Net.Sql\Domino.Net.Sql.csproj" />
+  </ItemGroup>
+
+</Project>
