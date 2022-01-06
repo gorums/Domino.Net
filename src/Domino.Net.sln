@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.0.31912.275
+VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{7896849A-935F-4B40-B1D4-C04D4344958E}"
 EndProject
@@ -25,7 +25,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domino.Net.Console", "Prese
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domino.Net.Sql", "Infrestructure\Persistence\Domino.Net.Sql\Domino.Net.Sql.csproj", "{7E5A7FC4-0030-43DC-AB98-85546F493977}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domino.Net.Coin", "Infrestructure\Persistence\Domino.Net.Coin\Domino.Net.Coin.csproj", "{7AA545B1-2D05-4DF2-BBAD-34DA59CD8687}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domino.Net.Coin", "Infrestructure\Persistence\Domino.Net.Coin\Domino.Net.Coin.csproj", "{7AA545B1-2D05-4DF2-BBAD-34DA59CD8687}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{07F1728C-3077-4883-BC60-20442CDE727D}"
+	ProjectSection(SolutionItems) = preProject
+		..\LICENSE = ..\LICENSE
+		..\README.md = ..\README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
