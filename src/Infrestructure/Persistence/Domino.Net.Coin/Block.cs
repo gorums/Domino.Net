@@ -1,18 +1,24 @@
 ﻿using System.Security.Cryptography;
+using System.Text;
 
 namespace Domino.Net.Coin;
 
 public class Block
 {
-    public Block(int height, byte[] prevHash, string creator, Transaction[] transactions)
+    public Block(Block lastBlock, Transaction[] transactions) : 
+        this(lastBlock.Height + 1, DateTime.Now.Ticks, lastBlock.Hash, lastBlock.Creator, transactions)
+    {
+    }
+
+    public Block(int height, Int64 timeStamp, byte[] prevHash, string creator, Transaction[] transactions)
     {
         Height = height;
         PrevHash = prevHash;        
-        TimeStamp = DateTime.Now.Ticks;
+        TimeStamp = timeStamp;
         Transactions = transactions;
         Hash = GenerateHash();
         Creator = creator;
-    }
+    }    
 
     /// <summary>
     /// A sequence number of blocks.
@@ -44,7 +50,7 @@ public class Block
     /// Who creates the block identified by the public key.
     /// </summary>
     public string Creator { get; set; }
-        
+
     /// <summary>
     /// Generate hash of current block
     /// </summary>
@@ -65,5 +71,21 @@ public class Block
         byte[] hash = sha.ComputeHash(headerBytes);
 
         return hash;
+    }
+
+    public static string GetHash(long timestamp, string lastHash, string transactions)
+    {
+        SHA256 sha256 = SHA256.Create();
+        var strSum = timestamp + lastHash + transactions;
+        byte[] sumBytes = Encoding.ASCII.GetBytes(strSum);
+        byte[] hashBytes = sha256.ComputeHash(sumBytes);
+        return Convert.ToBase64String(hashBytes);
+    }
+
+    internal static Block Genesis(Transaction[] transactions)
+    {
+        var ts = new DateTime(2022, 02, 07);
+        var block = new Block(1, ts.Ticks, Encoding.ASCII.GetBytes("-"), "system", transactions);
+        return block;
     }
 }
